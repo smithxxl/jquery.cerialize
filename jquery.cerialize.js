@@ -10,7 +10,7 @@
 //            var rselectTextarea = /select|textarea/i;
 //            var rinput = /text|hidden|password|search/i;
 
-            return $.makeArray(this.find("[name]").andSelf().filter("input[type=text], input[type=number], input[type=hidden], input[type=password], input[type=checkbox], input[type=email], input[type=file], input[type=radio]:checked, select, textarea").map(function (i, elem) {
+            return $.makeArray(this.find("[name]").andSelf().filter("input[type=text], input[type=number], input[type=tel], input[type=hidden], input[type=password], input[type=checkbox], input[type=email], input[type=file], input[type=radio]:checked, select, textarea").map(function (i, elem) {
                 var val = $(this).val();
 
                 if (val === null)
